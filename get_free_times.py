@@ -29,10 +29,3 @@ def open_google_sheet(json_keyfile, doc_url, sheet_name):
     data_fr_sheet = sheet.get_all_records()
 
     return data_fr_sheet
-
-data = open_google_sheet('C:/Users/gamak/AppData/Roaming/gcloud/fortelegrambot-389309-501cf7aa60ed.json',
-                  'https://docs.google.com/spreadsheets/d/1DIi0JsdVUXa2UvRw6yoY_oCfzvOL57aSuSd3fZ63kQ0/edit?usp=sharing',
-                  'D20230615')
-
-print(get_free_times(data))
-#print(get_free_times([{'Time': '11:00', 'Availability': 'free'}, {'Time': '12:00', 'Availability': 'free'}, {'Time': '13:00', 'Availability': 'closed'}, {'Time': '14:00', 'Availability': 'free'}, {'Time': '15:00', 'Availability': 'closed'}, {'Time': '16:00', 'Availability': 'closed'}, {'Time': '17:00', 'Availability': 'free'}, {'Time': '18:00', 'Availability': 'closed'}, {'Time': '19:00', 'Availability': 'closed'}]))
